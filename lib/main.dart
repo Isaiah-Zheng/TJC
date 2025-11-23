@@ -10,29 +10,36 @@ class MyApp extends StatelessWidget{
   @override
   Widget build(BuildContext context){
     return MaterialApp(
-      home: Scaffold(
+      home:Scaffold(
         appBar: AppBar(
-          title:Text("我的第一個App"),
-
+          title:Text("True Jesus Church"),
         ),
+
         body:Center(
-          child:Container(
-           width: 200,
-           height: 200,
-           color: Colors.blue,
-           child:Center(
-            child: Text(
-              '這是一個盒子',
-              style:TextStyle(color:Colors.white,fontSize:20)
-            ),
-           )
-          )
-        ),
+          child: Row(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              Icon(Icons.person,size:50,color:Colors.blue),
 
-      ),
-      
+              SizedBox(width:20),
+
+              Column(
+                mainAxisAlignment: MainAxisAlignment.center,
+                crossAxisAlignment: CrossAxisAlignment.start,
+                
+                children: [
+                  Text("Hallelujah",style: TextStyle(color: Colors.black),),
+                  Text("Jesus Love U",style: TextStyle(color: Colors.black),)
+                ],
+              ),
+
+            ],
+          ),
+
+
+        )
+      )
     );
-  }
-
-}
-
+  } 
+}  
+                
