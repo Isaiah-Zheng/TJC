@@ -25,8 +25,8 @@ class MyApp extends StatelessWidget{
               borderRadius: BorderRadius.circular(12),
             ),
 
-            child: Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
+            child: ListView(
+              
 
               children: [
                 Row(
@@ -56,7 +56,8 @@ class MyApp extends StatelessWidget{
                               Text(
                                 "24/11/25",
                                 style: TextStyle(fontSize: 13,color: Colors.grey),
-                              )
+                              ),
+                              
                             
 
 
@@ -73,6 +74,580 @@ class MyApp extends StatelessWidget{
 
                           )
                         ],
+                        
+
+                      )
+                      )
+
+                  ]
+                ),
+                Row(
+                  children: [
+                    Icon(Icons.person,size: 50,color:Colors.blue),
+                    SizedBox(width:15),
+
+                    Expanded(
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+
+                        children: [
+                          Row(
+                            children: [
+                              Text(
+                                "Isaiah Zheng",
+                                style: TextStyle(
+                                  fontSize: 18,
+                                  fontWeight: FontWeight.bold,
+                                  color: Colors.blue,
+                                  letterSpacing: 1
+                                ),
+                              ),
+                              Spacer(
+
+                              ),
+                              Text(
+                                "24/11/25",
+                                style: TextStyle(fontSize: 13,color: Colors.grey),
+                              ),
+                              
+                            
+
+
+                            ],
+                          
+                          ),
+                          SizedBox(height:5),
+
+                          Text(
+                            "Hallelujah,Jesus loves you forever.",
+                            style: TextStyle(
+                              fontSize: 13
+                            ),
+
+                          )
+                        ],
+                        
+
+                      )
+                      )
+
+                  ]
+                ),
+                Row(
+                  children: [
+                    Icon(Icons.person,size: 50,color:Colors.blue),
+                    SizedBox(width:15),
+
+                    Expanded(
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+
+                        children: [
+                          Row(
+                            children: [
+                              Text(
+                                "Isaiah Zheng",
+                                style: TextStyle(
+                                  fontSize: 18,
+                                  fontWeight: FontWeight.bold,
+                                  color: Colors.blue,
+                                  letterSpacing: 1
+                                ),
+                              ),
+                              Spacer(
+
+                              ),
+                              Text(
+                                "24/11/25",
+                                style: TextStyle(fontSize: 13,color: Colors.grey),
+                              ),
+                              
+                            
+
+
+                            ],
+                          
+                          ),
+                          SizedBox(height:5),
+
+                          Text(
+                            "Hallelujah,Jesus loves you forever.",
+                            style: TextStyle(
+                              fontSize: 13
+                            ),
+
+                          )
+                        ],
+                        
+
+                      )
+                      )
+
+                  ]
+                ),
+                Row(
+                  children: [
+                    Icon(Icons.person,size: 50,color:Colors.blue),
+                    SizedBox(width:15),
+
+                    Expanded(
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+
+                        children: [
+                          Row(
+                            children: [
+                              Text(
+                                "Isaiah Zheng",
+                                style: TextStyle(
+                                  fontSize: 18,
+                                  fontWeight: FontWeight.bold,
+                                  color: Colors.blue,
+                                  letterSpacing: 1
+                                ),
+                              ),
+                              Spacer(
+
+                              ),
+                              Text(
+                                "24/11/25",
+                                style: TextStyle(fontSize: 13,color: Colors.grey),
+                              ),
+                              
+                            
+
+
+                            ],
+                          
+                          ),
+                          SizedBox(height:5),
+
+                          Text(
+                            "Hallelujah,Jesus loves you forever.",
+                            style: TextStyle(
+                              fontSize: 13
+                            ),
+
+                          )
+                        ],
+                        
+
+                      )
+                      )
+
+                  ]
+                ),
+                Row(
+                  children: [
+                    Icon(Icons.person,size: 50,color:Colors.blue),
+                    SizedBox(width:15),
+
+                    Expanded(
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+
+                        children: [
+                          Row(
+                            children: [
+                              Text(
+                                "Isaiah Zheng",
+                                style: TextStyle(
+                                  fontSize: 18,
+                                  fontWeight: FontWeight.bold,
+                                  color: Colors.blue,
+                                  letterSpacing: 1
+                                ),
+                              ),
+                              Spacer(
+
+                              ),
+                              Text(
+                                "24/11/25",
+                                style: TextStyle(fontSize: 13,color: Colors.grey),
+                              ),
+                              
+                            
+
+
+                            ],
+                          
+                          ),
+                          SizedBox(height:5),
+
+                          Text(
+                            "Hallelujah,Jesus loves you forever.",
+                            style: TextStyle(
+                              fontSize: 13
+                            ),
+
+                          )
+                        ],
+                        
+
+                      )
+                      )
+
+                  ]
+                ),
+                Row(
+                  children: [
+                    Icon(Icons.person,size: 50,color:Colors.blue),
+                    SizedBox(width:15),
+
+                    Expanded(
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+
+                        children: [
+                          Row(
+                            children: [
+                              Text(
+                                "Isaiah Zheng",
+                                style: TextStyle(
+                                  fontSize: 18,
+                                  fontWeight: FontWeight.bold,
+                                  color: Colors.blue,
+                                  letterSpacing: 1
+                                ),
+                              ),
+                              Spacer(
+
+                              ),
+                              Text(
+                                "24/11/25",
+                                style: TextStyle(fontSize: 13,color: Colors.grey),
+                              ),
+                              
+                            
+
+
+                            ],
+                          
+                          ),
+                          SizedBox(height:5),
+
+                          Text(
+                            "Hallelujah,Jesus loves you forever.",
+                            style: TextStyle(
+                              fontSize: 13
+                            ),
+
+                          )
+                        ],
+                        
+
+                      )
+                      )
+
+                  ]
+                ),
+                Row(
+                  children: [
+                    Icon(Icons.person,size: 50,color:Colors.blue),
+                    SizedBox(width:15),
+
+                    Expanded(
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+
+                        children: [
+                          Row(
+                            children: [
+                              Text(
+                                "Isaiah Zheng",
+                                style: TextStyle(
+                                  fontSize: 18,
+                                  fontWeight: FontWeight.bold,
+                                  color: Colors.blue,
+                                  letterSpacing: 1
+                                ),
+                              ),
+                              Spacer(
+
+                              ),
+                              Text(
+                                "24/11/25",
+                                style: TextStyle(fontSize: 13,color: Colors.grey),
+                              ),
+                              
+                            
+
+
+                            ],
+                          
+                          ),
+                          SizedBox(height:5),
+
+                          Text(
+                            "Hallelujah,Jesus loves you forever.",
+                            style: TextStyle(
+                              fontSize: 13
+                            ),
+
+                          )
+                        ],
+                        
+
+                      )
+                      )
+
+                  ]
+                ),
+                Row(
+                  children: [
+                    Icon(Icons.person,size: 50,color:Colors.blue),
+                    SizedBox(width:15),
+
+                    Expanded(
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+
+                        children: [
+                          Row(
+                            children: [
+                              Text(
+                                "Isaiah Zheng",
+                                style: TextStyle(
+                                  fontSize: 18,
+                                  fontWeight: FontWeight.bold,
+                                  color: Colors.blue,
+                                  letterSpacing: 1
+                                ),
+                              ),
+                              Spacer(
+
+                              ),
+                              Text(
+                                "24/11/25",
+                                style: TextStyle(fontSize: 13,color: Colors.grey),
+                              ),
+                              
+                            
+
+
+                            ],
+                          
+                          ),
+                          SizedBox(height:5),
+
+                          Text(
+                            "Hallelujah,Jesus loves you forever.",
+                            style: TextStyle(
+                              fontSize: 13
+                            ),
+
+                          )
+                        ],
+                        
+
+                      )
+                      )
+
+                  ]
+                ),
+                Row(
+                  children: [
+                    Icon(Icons.person,size: 50,color:Colors.blue),
+                    SizedBox(width:15),
+
+                    Expanded(
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+
+                        children: [
+                          Row(
+                            children: [
+                              Text(
+                                "Isaiah Zheng",
+                                style: TextStyle(
+                                  fontSize: 18,
+                                  fontWeight: FontWeight.bold,
+                                  color: Colors.blue,
+                                  letterSpacing: 1
+                                ),
+                              ),
+                              Spacer(
+
+                              ),
+                              Text(
+                                "24/11/25",
+                                style: TextStyle(fontSize: 13,color: Colors.grey),
+                              ),
+                              
+                            
+
+
+                            ],
+                          
+                          ),
+                          SizedBox(height:5),
+
+                          Text(
+                            "Hallelujah,Jesus loves you forever.",
+                            style: TextStyle(
+                              fontSize: 13
+                            ),
+
+                          )
+                        ],
+                        
+
+                      )
+                      )
+
+                  ]
+                ),
+                Row(
+                  children: [
+                    Icon(Icons.person,size: 50,color:Colors.blue),
+                    SizedBox(width:15),
+
+                    Expanded(
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+
+                        children: [
+                          Row(
+                            children: [
+                              Text(
+                                "Isaiah Zheng",
+                                style: TextStyle(
+                                  fontSize: 18,
+                                  fontWeight: FontWeight.bold,
+                                  color: Colors.blue,
+                                  letterSpacing: 1
+                                ),
+                              ),
+                              Spacer(
+
+                              ),
+                              Text(
+                                "24/11/25",
+                                style: TextStyle(fontSize: 13,color: Colors.grey),
+                              ),
+                              
+                            
+
+
+                            ],
+                          
+                          ),
+                          SizedBox(height:5),
+
+                          Text(
+                            "Hallelujah,Jesus loves you forever.",
+                            style: TextStyle(
+                              fontSize: 13
+                            ),
+
+                          )
+                        ],
+                        
+
+                      )
+                      )
+
+                  ]
+                ),
+                Row(
+                  children: [
+                    Icon(Icons.person,size: 50,color:Colors.blue),
+                    SizedBox(width:15),
+
+                    Expanded(
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+
+                        children: [
+                          Row(
+                            children: [
+                              Text(
+                                "Isaiah Zheng",
+                                style: TextStyle(
+                                  fontSize: 18,
+                                  fontWeight: FontWeight.bold,
+                                  color: Colors.blue,
+                                  letterSpacing: 1
+                                ),
+                              ),
+                              Spacer(
+
+                              ),
+                              Text(
+                                "24/11/25",
+                                style: TextStyle(fontSize: 13,color: Colors.grey),
+                              ),
+                              
+                            
+
+
+                            ],
+                          
+                          ),
+                          SizedBox(height:5),
+
+                          Text(
+                            "Hallelujah,Jesus loves you forever.",
+                            style: TextStyle(
+                              fontSize: 13
+                            ),
+
+                          )
+                        ],
+                        
+
+                      )
+                      )
+
+                  ]
+                ),
+                Row(
+                  children: [
+                    Icon(Icons.person,size: 50,color:Colors.blue),
+                    SizedBox(width:15),
+
+                    Expanded(
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+
+                        children: [
+                          Row(
+                            children: [
+                              Text(
+                                "Isaiah Zheng",
+                                style: TextStyle(
+                                  fontSize: 18,
+                                  fontWeight: FontWeight.bold,
+                                  color: Colors.blue,
+                                  letterSpacing: 1
+                                ),
+                              ),
+                              Spacer(
+
+                              ),
+                              Text(
+                                "24/11/25",
+                                style: TextStyle(fontSize: 13,color: Colors.grey),
+                              ),
+                              
+                            
+
+
+                            ],
+                          
+                          ),
+                          SizedBox(height:5),
+
+                          Text(
+                            "Hallelujah,Jesus loves you forever.",
+                            style: TextStyle(
+                              fontSize: 13
+                            ),
+
+                          )
+                        ],
+                        
+
                       )
                       )
 
