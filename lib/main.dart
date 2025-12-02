@@ -9,113 +9,62 @@ class MyApp extends StatelessWidget{
   const MyApp({super.key});
 
   @override
-  Widget build(BuildContext context){
+  Widget build(BuildContext context) {
     return MaterialApp(
-      home:const Homepage(),
-    );
+      debugShowCheckedModeBanner: false,
+      home:const HomePage()
+    )
   }
 }
 
-class Homepage extends StatelessWidget{
-  const Homepage({super.key});
+class Member{
+  final String name;
+  final String birthday;
+  final String hope;
+
+  Member({required this.name,required this.birthday,required this.hope})
+} 
+
+class HomePage extends StatelessWidget{
+  const HomePage({super.key})
+
+  final List<Member> members =  [        //tell me in detail
+    Member(
+      name: "Isaiah Zheng",
+      birthday: "01/01/07",
+      hope: "Hope I can get baptized one day",
+
+    ),
+    Member(
+      name: "Mary Lee",
+      birthday: "05/05/08",
+      hope: "Hope to grow in faith",
+    ),
+    Member(
+      name: "John Tan",
+      birthday: "10/10/06",
+      hope: "Hope to serve the church",
+    ),
+  ];
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: const Text("True Jesus Church")),
-      body:Center(
-        child:Column(
-          mainAxisSize: MainAxisSize.min,//這個你要自己做一個實驗
-          children: [
-            ElevatedButton(
-              onPressed: () {
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(builder:(context)=>PageA()),
-                  );
-              },
-              child:Text("Isaiah"),
-            ),
-            SizedBox(height:20),
-            ElevatedButton(
-              onPressed: () {
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(builder:(context)=>PageB())
-                );
-              },
-              child: Text("Erik"),
+      appBar: AppBar(title:const Text("Members")),
+      body:ListView.builder(
+        itemCount: members.length,
+        itemBuilder: (context,index){
+          final member = members[index];
+          return Card(
+            margin: const EdgeInsets.all(10),
+            child:ListTile(
+              leading:
             )
+          )
 
 
-          ],
-        )
-        ),
-      );
-    
-    
-    
-    
-  }
-}
-
-class PageA extends StatelessWidget{
-  const PageA({super.key});
-
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar:AppBar(title:Text("Isaiah")),
-      body:Center(
-        child:Column(
-          mainAxisSize: MainAxisSize.min,
-          children: [
-            Text(
-              "this is Isaiah",
-              style: TextStyle(fontSize: 24),
-            ),
-            SizedBox(height:20),
-            ElevatedButton(
-              onPressed: (){
-                Navigator.pop(context);
-
-              },
-              child: Text("back"),
-            ),
-          ],
-        )
-      )
-
-
-    );
-  }
-}
-
-class PageB extends StatelessWidget{
-  const PageB({super.key});
-
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(title:Text("Erik")),
-      body:Center(
-        child:Column(
-          mainAxisSize: MainAxisSize.min,
-          children: [
-            Text(
-              "this is Erik",
-              style: TextStyle(fontSize: 24),
-            ),
-            SizedBox(height:20),
-            ElevatedButton(
-              onPressed: (){
-                Navigator.pop(context);
-              },
-              child:Text("back")
-            )
-
-          ],
-        )
+        },
+        
       )
     );
   }
