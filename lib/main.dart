@@ -12,8 +12,8 @@ class MyApp extends StatelessWidget{
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home:const HomePage()
-    )
+      home:HomePage()
+    );
   }
 }
 
@@ -22,11 +22,16 @@ class Member{
   final String birthday;
   final String hope;
 
-  Member({required this.name,required this.birthday,required this.hope})
+  Member({
+    required this.name,
+    required this.birthday,
+    required this.hope
+  }
+  );
 } 
 
 class HomePage extends StatelessWidget{
-  const HomePage({super.key})
+  HomePage({super.key});
 
   final List<Member> members =  [        //tell me in detail
     Member(
@@ -58,14 +63,65 @@ class HomePage extends StatelessWidget{
           return Card(
             margin: const EdgeInsets.all(10),
             child:ListTile(
-              leading:
+              leading:const Icon(Icons.person,size:50,color:Colors.blue),
+              title: Text(member.name),
+              subtitle: Text(member.birthday),
+              onTap:(){
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder:(context)=>DetailPage(
+                      name:member.name,
+                      birthday:member.birthday,
+                      hope:member.hope,
+                    )
+                  )
+                );
+              }
+
             )
-          )
+          );
 
 
         },
         
       )
     );
+
   }
+}
+
+class DetailPage extends StatelessWidget{
+  final String name;
+  final String birthday;
+  final String hope;
+
+  const DetailPage({
+    super.key,
+    required this.name,
+    required this.birthday,
+    required this.hope,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(title:Text(name)),
+      body:Padding(
+        padding: const EdgeInsets.all(20),
+        child:Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            Text("Name:$name",style: const TextStyle(fontSize: 20),),
+            const SizedBox(height: 10,),
+            Text("Birthday:$birthday",style: const TextStyle(fontSize: 18),),
+            SizedBox(height: 10,),
+            Text("Hope:$hope",style: TextStyle(fontSize: 18),)
+          ],
+        )
+      )
+    );
+    
+  }
+
 }
